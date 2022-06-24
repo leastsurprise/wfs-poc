@@ -11,7 +11,7 @@ url = 'https://data.linz.govt.nz/services;key=' + my_key + '/wfs?service=WFS&ver
 addressed_titles = {}
 for title_no in unaddressed_titles:
     addressed_titles[title_no] = []
-    params = {'request': 'GetFeature', 'typeName': 'layer-50804', 'SRSName': 'EPSG:4167', 'cql_filter': 'title_no=' + title_no, 'outputFormat': 'application/json'}
+    params = {'request': 'GetFeature', 'typeName': 'layer-50804', 'SRSName': 'EPSG:4167', 'cql_filter': "title_no='" + title_no + "'", 'outputFormat': 'application/json'}
     q = Request('GET', url, params=params).prepare().url
     data = gpd.read_file(q)
     for geom in data['geometry']:
