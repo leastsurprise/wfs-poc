@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from requests import Request
 import geopandas as gpd
-import re, json , unittest
+import re, json
 
 # load config dictionary from json file
 with open('config.json') as f:
