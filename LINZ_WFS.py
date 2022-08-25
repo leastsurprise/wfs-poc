@@ -95,7 +95,7 @@ class LINZ_WFS:
 
 if __name__ == "__main__":
 #    L = LINZ_wfs(config['my_linz_key'])
-#    addresses = L.get_addresses_for_titles(["95831","CB9A/258","CB655/91","325158","CB16K/805"])
+#    addresses = L.get_addresses_for_titles(["95831"])
 #    titles = L.get_titles_for_addresses(['2 Kajens Court, Lincoln'])
 
 # construct a LINZ_wfs object so that we can run some unit tests
